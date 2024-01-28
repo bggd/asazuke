@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+message Object {
+  string name = 1;
+  string library_file_path = 2;
+  int32 parent = 3;
+}
+
+message Collection {
+  string name = 1;
+  string library_file_path = 2;
+  repeated Collection children = 3;
+  repeated int32 objects = 4;
+}
+
+message Scene {
+  string name = 1;
+  Collection collection = 2;
+}
+
+message Asazuke {
+  repeated Scene scenes = 1;
+  repeated Object objects = 2;
+}
