@@ -5,6 +5,7 @@ authors = [{name="birthggd"}]
 classifiers = [
     "License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)"
 ]
+dependencies = ["protobuf == 4.*"]
 
 [project.urls]
 homepage =  "https://github.com/bggd/asazuke"
